@@ -282,6 +282,7 @@ main {
     border: dotted 80px #0e6aff;
     border-radius: 400px;
     /* animation: rotate 10s linear infinite; */
+    mask: linear-gradient(270deg, transparent 0% 50%, #FFF 50%);
 }
 
 .mask-dot {
