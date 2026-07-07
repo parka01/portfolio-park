@@ -259,30 +259,24 @@ main {
 
 
 /* ===== container ===== */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .frame-dot {
     width: 800px;
     height: 700px;
     overflow: clip;
-    position: relative;
+    position: fixed;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    mix-blend-mode: overlay;
 }
 
 .dot {
     width: 800px;
     height: 800px;
-    border: dotted 80px #0e6aff;
+    border: ridge 80px #dbe9ff;
     border-radius: 400px;
-    /* animation: rotate 10s linear infinite; */
-    mask: linear-gradient(270deg, transparent 0% 50%, #FFF 50%);
+    /* mask: linear-gradient(270deg, transparent 0% 50%, #FFF 50%); */
 }
 
 .mask-dot {
@@ -302,7 +296,7 @@ main {
 
 /* About */
 #about {
-    background: #fff;
+    /* background: #fff; */
 }
 
 .grid-2 {
@@ -902,6 +896,9 @@ footer .inner {
 }
 
 @media (max-width: 768px) {
+    .frame-dot {
+        z-index: -3;
+    }
 
     header {
         height: 60px;

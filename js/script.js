@@ -1,3 +1,14 @@
+window.addEventListener('scroll', () => {
+    let scrollValue = window.scrollY;
+    console.log('Vertical scroll:', scrollValue);
+    const dot = document.querySelector('.dot');
+    if (scrollValue > 0) {
+        dot.style.transform = `rotate(${scrollValue * 0.05}deg)`;
+    }
+
+
+});
+
 document.querySelectorAll('a[href="#home"]').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -55,7 +66,7 @@ window.addEventListener("scroll", () => {
     // ⭐ contact (맨 아래)
     if (scrollBottom) {
         current = "contact";
-    } 
+    }
     // ⭐ 나머지 섹션
     else {
         sections.forEach(section => {
