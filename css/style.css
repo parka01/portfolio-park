@@ -481,6 +481,44 @@ main {
     font-weight: 700;
 }
 
+
+
+.swiper-wrapper {
+    padding-block: 50px;
+}
+
+.swiper-wrapper .frame-portfolio {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 500px;
+    width: 500px;
+}
+
+.portfolio-card {
+    width: 500px;
+    aspect-ratio: 1;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #f4f4f5;
+}
+
+.portfolio-card video {
+    height: 100%;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+
 /* artwork */
 .portfolio-grid {
     display: grid;
