@@ -1,319 +1,254 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <!-- CountUp -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <!-- Font Awesome for icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+  <!-- CountUp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  </head>
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <!-- header -->
-    <header>
-      <div class="inner header_wrap">
-        <div class="logo">PORTFOLIO</div>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#artwork">Artwork</a></li>
-          </ul>
-        </nav>
-        <div class="contact-btn"><a href="#contact">Contact</a></div>
-        <div class="menu-toggle" id="mobile-menu-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="inner header_wrap">
+      <div class="logo">PORTFOLIO</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#artwork">Artwork</a></li>
+        </ul>
+      </nav>
+      <div class="contact-btn"><a href="#contact">Contact</a></div>
+      <div class="menu-toggle" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </header>
-
-    <!-- mobile nav -->
-    <div class="mobile-nav" id="mobile-nav">
-      <div class="mobile-close-btn" id="mobile-close-btn">X</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Portfolio</a></li>
-        <li><a href="#artwork">Artwork</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </div>
+  </header>
 
-    <!-- main banner 영상 -->
-    <main>
-      <section class="main_banner">
-        <video
-          class="bg_video"
-          src="./video/banner.mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-        ></video>
+  <!-- mobile nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-close-btn" id="mobile-close-btn">X</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#artwork">Artwork</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-        <div class="banner_content inner">
-          <div class="stats">
-            <div class="stat">
-              <strong data-target="100">0</strong>
-              <p>Illustrator/Photoshop</p>
-            </div>
-            <div class="stat">
-              <strong data-target="100">0</strong>
-              <p>HTML/CSS</p>
-            </div>
-            <div class="stat">
-              <strong data-target="85">0</strong>
-              <p>JavaScript</p>
-            </div>
-            <div class="stat">
-              <strong data-target="100">0</strong>
-              <p>Premiere Pro</p>
-            </div>
+  <!-- main banner 영상 -->
+  <main>
+    <section class="main_banner">
+      <video class="bg_video" src="./video/banner.mp4" autoplay muted loop playsinline></video>
+
+      <div class="banner_content inner">
+        <div class="stats">
+          <div class="stat">
+            <strong data-target="100">0</strong>
+            <p>Illustrator/Photoshop</p>
+          </div>
+          <div class="stat">
+            <strong data-target="100">0</strong>
+            <p>HTML/CSS</p>
+          </div>
+          <div class="stat">
+            <strong data-target="85">0</strong>
+            <p>JavaScript</p>
+          </div>
+          <div class="stat">
+            <strong data-target="100">0</strong>
+            <p>Premiere Pro</p>
           </div>
         </div>
-      </section>
-    </main>
-
-    <div class="container">
-      <div class="frame-dot">
-        <div class="dot"></div>
-        <div class="mask-dot"></div>
       </div>
-      <!-- About -->
-      <section id="about" data-aos="fade-up" data-aos-duration="2000">
-        <div class="inner">
-          <div class="grid-2">
-            <div class="reveal">
-              <div class="about-me">
-                <video
-                  src="./video/introduce02.mp4"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                ></video>
+    </section>
+  </main>
+
+  <div class="container">
+    <div class="frame-dot">
+      <div class="dot">
+        <img src="./images/meter.png" alt="meter image">
+      </div>
+      <div class="mask-dot"></div>
+    </div>
+    <!-- About -->
+    <section id="about" data-aos="fade-up" data-aos-duration="2000">
+      <div class="inner">
+        <div class="grid-2">
+          <div class="reveal">
+            <div class="about-me">
+              <video src="./video/introduce02.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <h2 class="about-title">
+              안녕하세요,<br />기초부터 차곡차곡 다져나가며 <br />성장하는 웹
+              퍼블리셔입니다.
+            </h2>
+            <p class="about-desc">
+              프론트엔드 개발자로 일하며 화면을 멋지게 구성하는 웹 퍼블리셔
+              직업에 푹 빠졌습니다.
+              <br />
+              생활속 흥미로운 모습을 화면상에 구현하기 위해 고민합니다.
+              <br />
+              탄탄한 기술과 근무경험을 활용하여 불가능에서 가능을 시각적으로
+              보여드리겠습니다.
+            </p>
+          </div>
+
+          <div class="about-cards reveal" style="transition-delay: 0.2s">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2026.07.13</div>
+                <div class="timeline-role">
+                  <strong>나래디자인학원 수료</strong>
+                  <span>- 브랜드 아이덴티티 UI/UX 포트폴리오 작업 및 웹사이트
+                    구현
+                  </span>
+                </div>
               </div>
-              <h2 class="about-title">
-                안녕하세요,<br />기초부터 차곡차곡 다져나가며 <br />성장하는 웹
-                퍼블리셔입니다.
-              </h2>
-              <p class="about-desc">
-                프론트엔드 개발자로 일하며 화면을 멋지게 구성하는 웹 퍼블리셔
-                직업에 푹 빠졌습니다.
-                <br />
-                생활속 흥미로운 모습을 화면상에 구현하기 위해 고민합니다.
-                <br />
-                탄탄한 기술과 근무경험을 활용하여 불가능에서 가능을 시각적으로
-                보여드리겠습니다.
-              </p>
+              <div class="timeline-item">
+                <div class="timeline-year">2026.07.03</div>
+                <div class="timeline-role">
+                  <strong>웹디자인개발기능사 취득</strong>
+                  <div class="skill-icon">
+                    <img src="./images/icon_premiere.png" alt="html image" />
+                    <img src="./images/icon_css.png" alt="css image" />
+                    <img src="./images/icon_js.png" alt="js image" />
+                    <img src="./images/icon_photoshop.png" alt="photoshop image" />
+                    <img src="./images/icon_illustrator.png" alt="illustrator image" />
+                  </div>
+                  <span>AI 이미지·영상 활용한 실무형 비주얼 제작 프로세스
+                    확장</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2026.06.26</div>
+                <div class="timeline-role">
+                  <strong>컴퓨터그래픽기능사 취득</strong>
+                  <div class="skill-icon">
+                    <img src="./images/photoshop.png" alt="photoshop image" />
+                    <img src="./images/illustrator.png" alt="illustrator image" />
+                    <img src="./images/indesign.png" alt="indesign image" />
+                  </div>
+                  <span>브랜드 기획, 시각디자인, 콘텐츠 제작, 웹 기획·프론트엔드
+                    연계</span>
+                </div>
+              </div>
             </div>
 
-            <div class="about-cards reveal" style="transition-delay: 0.2s">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-year">2026.07.13</div>
-                  <div class="timeline-role">
-                    <strong>나래디자인학원 수료</strong>
-                    <span
-                      >- 브랜드 아이덴티티 UI/UX 포트폴리오 작업 및 웹사이트
-                      구현
-                    </span>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-year">2026.07.03</div>
-                  <div class="timeline-role">
-                    <strong>웹디자인개발기능사 취득</strong>
-                    <div class="skill-icon">
-                      <img src="./images/icon_premiere.png" alt="html image" />
-                      <img src="./images/icon_css.png" alt="css image" />
-                      <img src="./images/icon_js.png" alt="js image" />
-                      <img
-                        src="./images/icon_photoshop.png"
-                        alt="photoshop image"
-                      />
-                      <img
-                        src="./images/icon_illustrator.png"
-                        alt="illustrator image"
-                      />
-                    </div>
-                    <span
-                      >AI 이미지·영상 활용한 실무형 비주얼 제작 프로세스
-                      확장</span
-                    >
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-year">2026.06.26</div>
-                  <div class="timeline-role">
-                    <strong>컴퓨터그래픽기능사 취득</strong>
-                    <div class="skill-icon">
-                      <img src="./images/photoshop.png" alt="photoshop image" />
-                      <img
-                        src="./images/illustrator.png"
-                        alt="illustrator image"
-                      />
-                      <img src="./images/indesign.png" alt="indesign image" />
-                    </div>
-                    <span
-                      >브랜드 기획, 시각디자인, 콘텐츠 제작, 웹 기획·프론트엔드
-                      연계</span
-                    >
-                  </div>
-                </div>
+            <div class="info-card-wrap">
+              <div class="info-card">
+                <h3><span class="card-num">01</span>목표</h3>
+                <p>
+                  한 브랜드가 고객에게 전달하고자 하는 메시지를 직관적으로
+                  전달시킬 수 있는 디자인을 구현합니다.
+                </p>
               </div>
-
-              <div class="info-card-wrap">
-                <div class="info-card">
-                  <h3><span class="card-num">01</span>목표</h3>
-                  <p>
-                    한 브랜드가 고객에게 전달하고자 하는 메시지를 직관적으로
-                    전달시킬 수 있는 디자인을 구현합니다.
-                  </p>
-                </div>
-                <div class="info-card">
-                  <h3><span class="card-num">02</span>기술적 장점</h3>
-                  <p>
-                    Adobe 포토샵 & 일러스트레이터, HTML/CSS, JavaScript, AI에
-                    대한 깊은 이해를 바탕으로 업무 효율을 극대화합니다.
-                  </p>
-                </div>
+              <div class="info-card">
+                <h3><span class="card-num">02</span>기술적 장점</h3>
+                <p>
+                  Adobe 포토샵 & 일러스트레이터, HTML/CSS, JavaScript, AI에
+                  대한 깊은 이해를 바탕으로 업무 효율을 극대화합니다.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 프로젝트 -->
-      <section id="projects">
-        <div class="inner">
-          <div class="title">
-            <h1>Branding</h1>
-          </div>
-          <div class="project-list">
-            <!-- Project 1 -->
-            <div
-              class="project-item reveal"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              <div class="project-thumb">
-                <div class="thumb-inner">
-                  <video
-                    src="./video/media_pacade.mp4"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                  ></video>
-                </div>
-              </div>
-              <div class="project-info">
-                <span>BI/BX guide</span>
-                <h3>화장품 브랜드<br />'newB.tria'</h3>
-                <p>
-                  newB.tria(뉴비트리아)는 부산 낙동강 하구에서 폭발적으로 늘어나
-                  생태계를 위협하는 뉴트리아를 활용하는 사업에서 출발하게 된
-                  뷰티브랜드 기업입니다. <br />깨끗한 낙동강 하구에서 얻을 수
-                  있는 자연 친화적 원료를 기반으로 한 화장품을 연구 및 개발하고
-                  있습니다.
-                </p>
-                <a
-                  href="https://parka01.github.io/brand-portfolio"
-                  target="_blank"
-                  class="btn-view"
-                >
-                  View BI/BX guide
-                  <div class="arrow-button">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </a>
+    <!-- 프로젝트 -->
+    <section id="projects">
+      <div class="inner">
+        <div class="title">
+          <h1>Branding</h1>
+        </div>
+        <div class="project-list">
+          <!-- Project 1 -->
+          <div class="project-item reveal" data-aos="fade-right" data-aos-duration="3000">
+            <div class="project-thumb">
+              <div class="thumb-inner">
+                <video src="./video/media_pacade.mp4" autoplay muted loop playsinline></video>
               </div>
             </div>
-
-            <!-- Project 2 -->
-            <div
-              class="project-item reveal"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            >
-              <div class="project-thumb">
-                <div class="thumb-inner">
-                  <video
-                    src="./video/newbtria.mp4"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                  ></video>
+            <div class="project-info">
+              <span>BI/BX guide</span>
+              <h3>화장품 브랜드<br />'newB.tria'</h3>
+              <p>
+                newB.tria(뉴비트리아)는 부산 낙동강 하구에서 폭발적으로 늘어나
+                생태계를 위협하는 뉴트리아를 활용하는 사업에서 출발하게 된
+                뷰티브랜드 기업입니다. <br />깨끗한 낙동강 하구에서 얻을 수
+                있는 자연 친화적 원료를 기반으로 한 화장품을 연구 및 개발하고
+                있습니다.
+              </p>
+              <a href="https://parka01.github.io/brand-portfolio" target="_blank" class="btn-view">
+                View BI/BX guide
+                <div class="arrow-button">
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item reveal" data-aos="fade-left" data-aos-duration="3000">
+            <div class="project-thumb">
+              <div class="thumb-inner">
+                <video src="./video/newbtria.mp4" autoplay muted loop playsinline></video>
               </div>
-              <div class="project-info">
-                <span>WEB site</span>
-                <h3>화장품 브랜드<br />'newB.tria'</h3>
-                <p>
-                  newB.tria의 정체성을 담은 브랜드 아이덴티티 작업을 기반으로
-                  만든 웹사이트입니다. <br />플로깅 행사, 학생증 인증 행사 등
-                  다양한 행사는 물론 통신사와 결합한 혜택도 제공하고 있습니다.
-                  <br />어떤 환경에서도 완벽하게 상호작용적인 UI/UX를 경험할 수
-                  있도록 <b>반응형</b>으로 제작하였습니다.
-                </p>
-              </div>
-              <a
-                href="https://parka01.github.io/portfolio_no.01"
-                class="btn-view"
-                target="_blank"
-              >
+            </div>
+            <div class="project-info">
+              <span>Website</span>
+              <h3>화장품 브랜드<br />'newB.tria'</h3>
+              <p>
+                newB.tria의 정체성을 담은 브랜드 아이덴티티 작업을 기반으로
+                만든 웹사이트입니다. <br />플로깅 행사, 학생증 인증 행사 등
+                다양한 행사는 물론 통신사와 결합한 혜택도 제공하고 있습니다.
+                <br />어떤 환경에서도 완벽하게 상호작용적인 UI/UX를 경험할 수
+                있도록 <b>반응형</b>으로 제작하였습니다.
+              </p>
+              <a href="https://parka01.github.io/portfolio_no.01" target="_blank" class="btn-view">
                 View WEB site
                 <div class="arrow-button">
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </a>
+
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div
-            class="project-item reverse reveal"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-          >
+          <div class="project-item reverse reveal" data-aos="fade-right" data-aos-duration="3000">
             <div class="project-info">
-              <span>WEB guide</span>
+              <span>Web guide</span>
               <h3>화장품 브랜드<br />'newB.tria'</h3>
               <p>
                 newB.tria웹사이트를 어떤 생각으로 기힉하고 제작하게 되었는지를
                 기록해둔 설명서입니다.
               </p>
-              <a
-                href="https://parka01.github.io/brand-portfolio/pages/web-guide"
-                target="_blank"
-                class="btn-view"
-              >
+              <a href="https://parka01.github.io/brand-portfolio/pages/web-guide" target="_blank" class="btn-view">
                 View WEB guide
                 <div class="arrow-button">
                   <i class="fa-solid fa-arrow-right"></i>
@@ -323,348 +258,279 @@
             <div class="project-thumb">
               <div class="thumb-inner">
                 <!-- 프로젝트 썸네일 이미지 -->
-                <video
-                  src="./video/daffodil.mp4"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                ></video>
+                <video src="./video/daffodil.mp4" autoplay muted loop playsinline></video>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- 아트워크 -->
-    <section id="artwork">
-      <div class="inner">
-        <!-- title -->
-        <div class="title">
-          <h1>Projects</h1>
-        </div>
-        <div class="swiper mySwiper">
-          <ul
-            class="swiper-wrapper"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-          >
-            <li class="swiper-slide frame-portfolio">
-              <a
-                href="https://parka01.github.io/portfolio_no.03"
-                class="portfolio-card"
-              >
-                <video
-                  src="./video/portfolio_2_video_1.mp4"
-                  muted
-                  autoplay
-                  loop
-                ></video>
-              </a>
-              <div class="card-info">
-                <div class="info-text">
-                  <h3>Project 01</h3>
-                  <p>정부 보안 기밀 웹사이트</p>
-                </div>
-                <div class="skill-icon">
-                  <img src="./images/icon_illustrator.png" alt="aftereffects" />
-                  <img src="./images/asset_html_white.png" alt="aftereffects" />
-                  <img src="./images/css_icon.png" alt="aftereffects" />
-                  <img src="./images/js_icon.png" alt="aftereffects" />
-                </div>
-              </div>
-            </li>
-            <li class="swiper-slide frame-portfolio">
-              <a href="#" class="portfolio-card">
-                <video
-                  src="./video/portfolio_2_video_1.mp4"
-                  muted
-                  autoplay
-                  loop
-                ></video>
-              </a>
-              <div class="card-info">
-                <div class="info-text">
-                  <h3>Project 01</h3>
-                  <p>정부 보안 기밀 웹사이트</p>
-                </div>
-                <div class="skill-icon">
-                  <img src="./images/aftereffects.png" alt="aftereffects" />
-                  <img src="./images/figma.png" alt="figma" />
-                </div>
-              </div>
-            </li>
-            <li class="swiper-slide frame-portfolio">
-              <a href="#" class="portfolio-card">
-                <video
-                  src="./video/portfolio_2_video_1.mp4"
-                  muted
-                  autoplay
-                  loop
-                ></video>
-              </a>
-              <div class="card-info">
-                <div class="info-text">
-                  <h3>Project 01</h3>
-                  <p>정부 보안 기밀 웹사이트</p>
-                </div>
-                <div class="skill-icon">
-                  <img src="./images/aftereffects.png" alt="aftereffects" />
-                  <img src="./images/figma.png" alt="figma" />
-                </div>
-              </div>
-            </li>
-            <li class="swiper-slide frame-portfolio">
-              <a href="#" class="portfolio-card">
-                <video
-                  src="./video/portfolio_2_video_1.mp4"
-                  muted
-                  autoplay
-                  loop
-                ></video>
-              </a>
-              <div class="card-info">
-                <div class="info-text">
-                  <h3>Project 01</h3>
-                  <p>정부 보안 기밀 웹사이트</p>
-                </div>
-                <div class="skill-icon">
-                  <img src="./images/aftereffects.png" alt="aftereffects" />
-                  <img src="./images/figma.png" alt="figma" />
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
+  </div>
 
-    <!-- 비디오 모달 -->
-    <div id="videoModal">
-      <div class="modal-body" id="modalContainer">
-        <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
-        <div id="videoPlayerArea"></div>
+  <!-- 아트워크 -->
+  <section id="artwork">
+    <div class="inner">
+      <!-- title -->
+      <div class="title">
+        <h1>Projects</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper" data-aos="fade-right" data-aos-duration="3000">
+          <li class="swiper-slide frame-portfolio">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
+              <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
+            </a>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>Project 01</h3>
+                <p>정부 보안 기밀 웹사이트</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_html.png" alt="aftereffects" />
+                <img src="./images/icon_css.png" alt="aftereffects" />
+                <img src="./images/icon_js.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
+              <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
+            </a>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>Project 01</h3>
+                <p>정부 보안 기밀 웹사이트</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_html.png" alt="aftereffects" />
+                <img src="./images/icon_css.png" alt="aftereffects" />
+                <img src="./images/icon_js.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
+              <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
+            </a>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>Project 01</h3>
+                <p>정부 보안 기밀 웹사이트</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_html.png" alt="aftereffects" />
+                <img src="./images/icon_css.png" alt="aftereffects" />
+                <img src="./images/icon_js.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- 1. 쇼츠 슬라이더 -->
-    <section class="slider-section">
-      <div class="inner">
-        <div class="slider-header">
-          <h3>Short-form</h3>
-          <p>Vertical creative works.</p>
-        </div>
+  <!-- 비디오 모달 -->
+  <div id="videoModal">
+    <div class="modal-body" id="modalContainer">
+      <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
+      <div id="videoPlayerArea"></div>
+    </div>
+  </div>
 
-        <div class="swiper shortsSwiper" data-aos="fade-up">
-          <div class="swiper-wrapper">
-            <!-- 
+  <!-- 1. 쇼츠 슬라이더 -->
+  <section class="slider-section">
+    <div class="inner">
+      <div class="slider-header">
+        <h3>Short-form</h3>
+        <p>Vertical creative works.</p>
+      </div>
+
+      <div class="swiper shortsSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- 
                          data-video-url: 유튜브 주소 혹은 파일 경로 / 클릭 시 보이게 하기 위한 연결
                          data-video-type: 'vertical' (세로) 또는 'horizontal' (가로) 
                     -->
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/live/shorts_1.mp4"
-              data-video-type="vertical"
-            >
-              <div class="thumbnail-box aspect-shorts">
-                <!-- 본인 작업 영상 -->
-                <video src="./video/live/shorts_1.mp4"></video>
+          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_1.mp4" data-video-type="vertical">
+            <div class="thumbnail-box aspect-shorts">
+              <!-- 본인 작업 영상 -->
+              <video src="./video/live/shorts_1.mp4"></video>
 
-                <div class="play-overlay">
-                  <div class="play-circle shorts-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
+              <div class="play-overlay">
+                <div class="play-circle shorts-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">Modern Motion</h4>
-                <p class="card-desc">Motion, Edit</p>
               </div>
             </div>
-
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/live/shorts_2.mp4"
-              data-video-type="vertical"
-            >
-              <div class="thumbnail-box aspect-shorts">
-                <!-- 본인 작업 영상 -->
-                <video src="./video/live/shorts_2.mp4"></video>
-
-                <div class="play-overlay">
-                  <div class="play-circle shorts-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">Branding Clip</h4>
-                <p class="card-desc">Direction</p>
-              </div>
-            </div>
-
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/live/shorts_3.mp4"
-              data-video-type="vertical"
-            >
-              <div class="thumbnail-box aspect-shorts">
-                <!-- 본인 작업 영상 -->
-                <video src="./video/live/shorts_3.mp4"></video>
-                <div class="play-overlay">
-                  <div class="play-circle shorts-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">Direct File</h4>
-                <p class="card-desc">MP4 Video</p>
-              </div>
-            </div>
-
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/live/shorts_4.mp4"
-              data-video-type="vertical"
-            >
-              <div class="thumbnail-box aspect-shorts">
-                <!-- 본인 작업 영상 -->
-                <video src="./video/live/shorts_4.mp4"></video>
-                <div class="play-overlay">
-                  <div class="play-circle shorts-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">Direct File</h4>
-                <p class="card-desc">MP4 Video</p>
-              </div>
+            <div class="info-box">
+              <h4 class="card-title">Modern Motion</h4>
+              <p class="card-desc">Motion, Edit</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
 
-    <!-- 2. 일반 영상 슬라이더 -->
-    <section class="slider-section">
-      <div class="inner">
-        <div class="slider-header">
-          <h3>Featured Works</h3>
-          <p>Main production projects.</p>
-        </div>
-        <div
-          class="swiper videoSwiper"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <div class="swiper-wrapper">
-            <!-- 가로 카드 01 -->
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/brand_video.mp4"
-              data-video-type="horizontal"
-            >
-              <div class="thumbnail-box aspect-wide">
-                <!-- 본인 작업 비디오 소스 -->
-                <video src="./video/brand_video.mp4"></video>
+          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_2.mp4" data-video-type="vertical">
+            <div class="thumbnail-box aspect-shorts">
+              <!-- 본인 작업 영상 -->
+              <video src="./video/live/shorts_2.mp4"></video>
 
-                <div class="play-overlay">
-                  <div class="play-circle wide-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
+              <div class="play-overlay">
+                <div class="play-circle shorts-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">2024 Global Campaign</h4>
-                <p class="card-desc">
-                  Directed the entire process from planning to final mastering.
-                </p>
               </div>
             </div>
-
-            <!-- 가로 카드 02 -->
-            <div
-              class="swiper-slide video-card"
-              data-video-url="./video/20063220-uhd_3840_2160_24fps.mp4"
-              data-video-type="horizontal"
-            >
-              <div class="thumbnail-box aspect-wide">
-                <!-- 본인 작업 비디오 소스 -->
-                <video src="./video/20063220-uhd_3840_2160_24fps.mp4"></video>
-
-                <div class="play-overlay">
-                  <div class="play-circle wide-play">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="info-box">
-                <h4 class="card-title">Cinematic Visualizer</h4>
-                <p class="card-desc">
-                  Experimental visual implementation and sound design.
-                </p>
-              </div>
+            <div class="info-box">
+              <h4 class="card-title">Branding Clip</h4>
+              <p class="card-desc">Direction</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_3.mp4" data-video-type="vertical">
+            <div class="thumbnail-box aspect-shorts">
+              <!-- 본인 작업 영상 -->
+              <video src="./video/live/shorts_3.mp4"></video>
+              <div class="play-overlay">
+                <div class="play-circle shorts-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="info-box">
+              <h4 class="card-title">Direct File</h4>
+              <p class="card-desc">MP4 Video</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_4.mp4" data-video-type="vertical">
+            <div class="thumbnail-box aspect-shorts">
+              <!-- 본인 작업 영상 -->
+              <video src="./video/live/shorts_4.mp4"></video>
+              <div class="play-overlay">
+                <div class="play-circle shorts-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="info-box">
+              <h4 class="card-title">Direct File</h4>
+              <p class="card-desc">MP4 Video</p>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="inner">
-        <p class="contact-sub">LET’S BUILD SOMETHING GREAT</p>
-        <h2 class="contact-title">새로운 시작, 함께할까요?</h2>
-        <a href="mailto:for.unique.fashion@gmail.com" class="btn-contact">
-          <span>Contact</span>
-        </a>
+  <!-- 2. 일반 영상 슬라이더 -->
+  <section class="slider-section">
+    <div class="inner">
+      <div class="slider-header">
+        <h3>Featured Works</h3>
+        <p>Main production projects.</p>
       </div>
-    </section>
+      <div class="swiper videoSwiper" data-aos="fade-up" data-aos-duration="3000">
+        <div class="swiper-wrapper">
+          <!-- 가로 카드 01 -->
+          <div class="swiper-slide video-card" data-video-url="./video/brand_video.mp4" data-video-type="horizontal">
+            <div class="thumbnail-box aspect-wide">
+              <!-- 본인 작업 비디오 소스 -->
+              <video src="./video/brand_video.mp4"></video>
 
-    <!-- Footer -->
-    <footer>
-      <div class="inner">
-        <p>Copyright © 2026 All rights reserved.</p>
-        <p>여러분의 상상을 구현해 드립니다.</p>
+              <div class="play-overlay">
+                <div class="play-circle wide-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="info-box">
+              <h4 class="card-title">2024 Global Campaign</h4>
+              <p class="card-desc">
+                Directed the entire process from planning to final mastering.
+              </p>
+            </div>
+          </div>
+
+          <!-- 가로 카드 02 -->
+          <div class="swiper-slide video-card" data-video-url="./video/20063220-uhd_3840_2160_24fps.mp4"
+            data-video-type="horizontal">
+            <div class="thumbnail-box aspect-wide">
+              <!-- 본인 작업 비디오 소스 -->
+              <video src="./video/20063220-uhd_3840_2160_24fps.mp4"></video>
+
+              <div class="play-overlay">
+                <div class="play-circle wide-play">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="info-box">
+              <h4 class="card-title">Cinematic Visualizer</h4>
+              <p class="card-desc">
+                Experimental visual implementation and sound design.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="inner">
+      <p class="contact-sub">LET’S BUILD SOMETHING GREAT</p>
+      <h2 class="contact-title">새로운 시작, 함께할까요?</h2>
+      <a href="mailto:for.unique.fashion@gmail.com" class="btn-contact">
+        <span>Contact</span>
+      </a>
+    </div>
+  </section>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="inner">
+      <p>Copyright © 2026 All rights reserved.</p>
+      <p>여러분의 상상을 구현해 드립니다.</p>
+    </div>
+  </footer>
 
-    <!-- js -->
-    <script src="js/script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        centeredSlides: false,
-        spaceBetween: 30,
-        grabCursor: true,
-      });
-    </script>
-  </body>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- js -->
+  <script src="js/script.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 30,
+      grabCursor: true,
+    });
+  </script>
+</body>
+
 </html>

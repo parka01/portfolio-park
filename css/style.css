@@ -191,6 +191,8 @@ nav a:hover {
 /* ===== MAIN BANNER ===== */
 main {
     min-height: 100vh;
+    position: relative;
+    z-index: 7;
 }
 
 .main_banner {
@@ -274,9 +276,13 @@ main {
 .dot {
     width: 800px;
     height: 800px;
-    border: ridge 80px #dbe9ff;
+    /* border: ridge 80px #dbe9ff; */
     border-radius: 400px;
     /* mask: linear-gradient(270deg, transparent 0% 50%, #FFF 50%); */
+}
+
+.dot img {
+    width: 100%;
 }
 
 .mask-dot {
@@ -291,7 +297,8 @@ main {
 .container {
     width: 100%;
     max-width: 1600px;
-    margin: 130px auto;
+    margin: 0px auto;
+    margin-top: 130px;
 }
 
 /* About */
@@ -935,7 +942,7 @@ footer .inner {
 
 @media (max-width: 768px) {
     .frame-dot {
-        z-index: -3;
+        display: none;
     }
 
     header {
