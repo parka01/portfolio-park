@@ -262,8 +262,7 @@ main {
 
 /* ===== container ===== */
 .frame-dot {
-    width: 800px;
-    height: 700px;
+    width: 700px;
     overflow: clip;
     position: fixed;
     right: -30%;
@@ -271,6 +270,7 @@ main {
     transform: translateY(-50%);
     z-index: 5;
     mix-blend-mode: overlay;
+    padding-block: 50px;
 }
 
 .dot {
@@ -802,6 +802,29 @@ main {
 
 
 /* ===== Contact ===== */
+@keyframes write {
+    0% {
+        stroke-dashoffset: 3026.421875;
+    }
+
+    80% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
+
+.handwriting {
+    margin-top: 80px;
+    width: 500px;
+    stroke-dasharray: 3026.421875;
+    animation: write 12s infinite linear;
+}
+
+
 #contact {
     padding: 160px 0;
     text-align: center;
