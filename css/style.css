@@ -69,6 +69,15 @@ section {
     transform: translateX(5px);
 }
 
+.label-blue {
+    border: solid 1px dodgerblue;
+    font-size: 15px;
+    padding: 2px 5px;
+    color: dodgerblue;
+    background: #d6eaff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 
 /* ===== header ===== */
 header {
@@ -201,6 +210,20 @@ main {
     min-height: 600px;
     overflow: hidden;
     padding-top: 80px;
+
+    .headline {
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        z-index: 10;
+        font-size: 30px;
+
+        .random {
+            font-size: 50px;
+        }
+    }
 }
 
 .bg_video {

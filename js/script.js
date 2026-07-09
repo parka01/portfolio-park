@@ -201,3 +201,16 @@ function closeModal() {
 
 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+$(
+    function () {
+        $(document).ready(function () {
+            var words = ["소통", "반응형","웹 표준", "효율성", "관리성", "타당성", "심미성", "상호작용", "공동작업"];
+            var index = 0;
+
+            setInterval(function () {
+                $(".random").text(words[index]);
+                index = (index + 1) % words.length;
+            }, 900);
+        });
+    }
+);
