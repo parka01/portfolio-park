@@ -514,10 +514,21 @@ main {
     justify-content: center;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     background-color: #f4f4f5;
+    pointer-events: auto;
+}
+
+.portfolio-card.news {
+    aspect-ratio: 1/1.25;
 }
 
 .portfolio-card video {
     height: 100%;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .portfolio-card:hover {
@@ -610,7 +621,6 @@ main {
 .slider-header h3 {
     font-size: 32px;
     font-weight: 800;
-    text-transform: uppercase;
 }
 
 .slider-header p {
@@ -707,6 +717,8 @@ main {
 
 .info-box {
     margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-title {
@@ -826,7 +838,7 @@ main {
 
 
 #contact {
-    padding: 160px 0;
+    padding: 140px 0;
     text-align: center;
     /* background-color: #f4f4f5; */
     background: url(../images/Rectangle\ 61.png) no-repeat center/cover;

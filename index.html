@@ -74,7 +74,7 @@
             <p>HTML/CSS</p>
           </div>
           <div class="stat">
-            <strong data-target="85">0</strong>
+            <strong data-target="100">0</strong>
             <p>JavaScript</p>
           </div>
           <div class="stat">
@@ -122,7 +122,7 @@
                 <div class="timeline-year">2026.07.13</div>
                 <div class="timeline-role">
                   <strong>나래디자인학원 수료</strong>
-                  <span>- 브랜드 아이덴티티 UI/UX 포트폴리오 작업 및 웹사이트
+                  <span>브랜드 아이덴티티 UI/UX 포트폴리오 작업 및 웹사이트
                     구현
                   </span>
                 </div>
@@ -216,12 +216,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-item reveal" data-aos="fade-left" data-aos-duration="3000">
-            <div class="project-thumb">
-              <div class="thumb-inner">
-                <video src="./video/newbtria.mp4" autoplay muted loop playsinline></video>
-              </div>
-            </div>
+          <div class="project-item reverse reveal" data-aos="fade-left" data-aos-duration="3000">
             <div class="project-info">
               <span>Website</span>
               <h3>화장품 브랜드<br />'newB.tria'</h3>
@@ -238,12 +233,24 @@
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </a>
-
             </div>
+            <div class="project-thumb">
+
+              <div class="thumb-inner">
+                <video src="./video/newbtria.mp4" autoplay muted loop playsinline></video>
+              </div>
+            </div>
+
           </div>
 
           <!-- Project 3 -->
-          <div class="project-item reverse reveal" data-aos="fade-right" data-aos-duration="3000">
+          <div class="project-item reveal" data-aos="fade-right" data-aos-duration="3000">
+            <div class="project-thumb">
+              <div class="thumb-inner">
+                <!-- 프로젝트 썸네일 이미지 -->
+                <video src="./video/daffodil.mp4" autoplay muted loop playsinline></video>
+              </div>
+            </div>
             <div class="project-info">
               <span>Web guide</span>
               <h3>화장품 브랜드<br />'newB.tria'</h3>
@@ -258,13 +265,10 @@
                 </div>
               </a>
             </div>
-            <div class="project-thumb">
-              <div class="thumb-inner">
-                <!-- 프로젝트 썸네일 이미지 -->
-                <video src="./video/daffodil.mp4" autoplay muted loop playsinline></video>
-              </div>
-            </div>
+
           </div>
+
+
         </div>
       </div>
     </section>
@@ -280,7 +284,7 @@
       <div class="swiper mySwiper">
         <ul class="swiper-wrapper" data-aos="fade-right" data-aos-duration="3000">
           <li class="swiper-slide frame-portfolio">
-            <a href="https://parka01.github.io/portfolio_no.02" class="portfolio-card">
+            <a href="https://parka01.github.io/portfolio_no.02" class="portfolio-card" target="_blank">
               <video src="./video/screenshot_corn_farm.mp4" muted autoplay loop></video>
             </a>
             <div class="card-info">
@@ -297,7 +301,24 @@
             </div>
           </li>
           <li class="swiper-slide frame-portfolio">
-            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card" target="_blank">
+              <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
+            </a>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>Project 02</h3>
+                <p>정부 보안 기밀 웹사이트</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_html.png" alt="aftereffects" />
+                <img src="./images/icon_css.png" alt="aftereffects" />
+                <img src="./images/icon_js.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card" target="_blank">
               <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
             </a>
             <div class="card-info">
@@ -314,24 +335,7 @@
             </div>
           </li>
           <li class="swiper-slide frame-portfolio">
-            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
-              <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
-            </a>
-            <div class="card-info">
-              <div class="info-text">
-                <h3>Project 01</h3>
-                <p>정부 보안 기밀 웹사이트</p>
-              </div>
-              <div class="skill-icon">
-                <img src="./images/icon_html.png" alt="aftereffects" />
-                <img src="./images/icon_css.png" alt="aftereffects" />
-                <img src="./images/icon_js.png" alt="aftereffects" />
-                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
-              </div>
-            </div>
-          </li>
-          <li class="swiper-slide frame-portfolio">
-            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card">
+            <a href="https://parka01.github.io/portfolio_no.03" class="portfolio-card" target="_blank">
               <video src="./video/portfolio_2_video_1.mp4" muted autoplay loop></video>
             </a>
             <div class="card-info">
@@ -360,158 +364,276 @@
     </div>
   </div>
 
-  <!-- 1. 쇼츠 슬라이더 -->
-  <section class="slider-section">
-    <div class="inner">
-      <div class="slider-header">
-        <h3>Short-form</h3>
-        <p>Vertical creative works.</p>
-      </div>
-
-      <div class="swiper shortsSwiper" data-aos="fade-up">
-        <div class="swiper-wrapper">
-          <!-- 
-                         data-video-url: 유튜브 주소 혹은 파일 경로 / 클릭 시 보이게 하기 위한 연결
-                         data-video-type: 'vertical' (세로) 또는 'horizontal' (가로) 
-                    -->
-          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_1.mp4" data-video-type="vertical">
-            <div class="thumbnail-box aspect-shorts">
-              <!-- 본인 작업 영상 -->
-              <video src="./video/live/shorts_1.mp4"></video>
-
-              <div class="play-overlay">
-                <div class="play-circle shorts-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="info-box">
-              <h4 class="card-title">Modern Motion</h4>
-              <p class="card-desc">Motion, Edit</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_2.mp4" data-video-type="vertical">
-            <div class="thumbnail-box aspect-shorts">
-              <!-- 본인 작업 영상 -->
-              <video src="./video/live/shorts_2.mp4"></video>
-
-              <div class="play-overlay">
-                <div class="play-circle shorts-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="info-box">
-              <h4 class="card-title">Branding Clip</h4>
-              <p class="card-desc">Direction</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_3.mp4" data-video-type="vertical">
-            <div class="thumbnail-box aspect-shorts">
-              <!-- 본인 작업 영상 -->
-              <video src="./video/live/shorts_3.mp4"></video>
-              <div class="play-overlay">
-                <div class="play-circle shorts-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="info-box">
-              <h4 class="card-title">Direct File</h4>
-              <p class="card-desc">MP4 Video</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide video-card" data-video-url="./video/live/shorts_4.mp4" data-video-type="vertical">
-            <div class="thumbnail-box aspect-shorts">
-              <!-- 본인 작업 영상 -->
-              <video src="./video/live/shorts_4.mp4"></video>
-              <div class="play-overlay">
-                <div class="play-circle shorts-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="info-box">
-              <h4 class="card-title">Direct File</h4>
-              <p class="card-desc">MP4 Video</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- 2. 일반 영상 슬라이더 -->
   <section class="slider-section">
     <div class="inner">
       <div class="slider-header">
-        <h3>Featured Works</h3>
-        <p>Main production projects.</p>
+        <h3>Video Works</h3>
+        <p>영상 작업물입니다.</p>
       </div>
       <div class="swiper videoSwiper" data-aos="fade-up" data-aos-duration="3000">
         <div class="swiper-wrapper">
           <!-- 가로 카드 01 -->
-          <div class="swiper-slide video-card" data-video-url="./video/brand_video.mp4" data-video-type="horizontal">
+          <div class="swiper-slide video-card" data-video-url="./video/video_work_01.mp4" data-video-type="horizontal">
             <div class="thumbnail-box aspect-wide">
               <!-- 본인 작업 비디오 소스 -->
-              <video src="./video/brand_video.mp4"></video>
-
-              <div class="play-overlay">
-                <div class="play-circle wide-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
+              <video src="./video/video_work_01.mp4" muted autoplay loop></video>
             </div>
             <div class="info-box">
-              <h4 class="card-title">2024 Global Campaign</h4>
-              <p class="card-desc">
-                Directed the entire process from planning to final mastering.
-              </p>
+              <div>
+                <h4 class="card-title">부산시청 온라인 교육영상</h4>
+                <p class="card-desc">
+                  기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작
+                </p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_premiere.png" alt="icon premiere pro" />
+                <img src="./images/icon_photoshop.png" alt="icon photoshop" />
+                <img src="./images/icon_illustrator.png" alt="icon illustrator" />
+                <img src="./images/icon_chatgpt.png" alt="icon chatgpt" />
+              </div>
             </div>
           </div>
 
           <!-- 가로 카드 02 -->
-          <div class="swiper-slide video-card" data-video-url="./video/20063220-uhd_3840_2160_24fps.mp4"
-            data-video-type="horizontal">
+          <div class="swiper-slide video-card" data-video-url="./video/video_work_02.mp4" data-video-type="horizontal">
             <div class="thumbnail-box aspect-wide">
               <!-- 본인 작업 비디오 소스 -->
-              <video src="./video/20063220-uhd_3840_2160_24fps.mp4"></video>
-
-              <div class="play-overlay">
-                <div class="play-circle wide-play">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
+              <video src="./video/video_work_02.mp4" muted autoplay loop></video>
             </div>
             <div class="info-box">
-              <h4 class="card-title">Cinematic Visualizer</h4>
-              <p class="card-desc">
-                Experimental visual implementation and sound design.
-              </p>
+              <div>
+                <h4 class="card-title">부산시청 온라인 교육영상</h4>
+                <p class="card-desc">
+                  기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작
+                </p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_premiere.png" alt="icon premiere pro" />
+                <img src="./images/icon_photoshop.png" alt="icon photoshop" />
+                <img src="./images/icon_illustrator.png" alt="icon illustrator" />
+                <img src="./images/icon_chatgpt.png" alt="icon chatgpt" />
+              </div>
             </div>
           </div>
+
+          <!-- 가로 카드 03 -->
+          <div class="swiper-slide video-card" data-video-url="./video/video_work_03.mp4" data-video-type="horizontal">
+            <div class="thumbnail-box aspect-wide">
+              <!-- 본인 작업 비디오 소스 -->
+              <video src="./video/video_work_03.mp4" muted autoplay loop></video>
+            </div>
+            <div class="info-box">
+              <div>
+                <h4 class="card-title">부산시청 온라인 교육영상</h4>
+                <p class="card-desc">
+                  기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작
+                </p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_premiere.png" alt="icon premiere pro" />
+                <img src="./images/icon_photoshop.png" alt="icon photoshop" />
+                <img src="./images/icon_illustrator.png" alt="icon illustrator" />
+                <img src="./images/icon_chatgpt.png" alt="icon chatgpt" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 가로 카드 04 -->
+          <div class="swiper-slide video-card" data-video-url="./video/video_work_04.mp4" data-video-type="horizontal">
+            <div class="thumbnail-box aspect-wide">
+              <!-- 본인 작업 비디오 소스 -->
+              <video src="./video/video_work_04.mp4" muted autoplay loop></video>
+            </div>
+            <div class="info-box">
+              <div>
+                <h4 class="card-title">부산시청 온라인 교육영상</h4>
+                <p class="card-desc">
+                  기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작
+                </p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_premiere.png" alt="icon premiere pro" />
+                <img src="./images/icon_photoshop.png" alt="icon photoshop" />
+                <img src="./images/icon_illustrator.png" alt="icon illustrator" />
+                <img src="./images/icon_chatgpt.png" alt="icon chatgpt" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 가로 카드 04 -->
+          <div class="swiper-slide video-card" data-video-url="./video/video_work_05.mp4" data-video-type="horizontal">
+            <div class="thumbnail-box aspect-wide">
+              <!-- 본인 작업 비디오 소스 -->
+              <video src="./video/video_work_05.mp4" muted autoplay loop></video>
+            </div>
+            <div class="info-box">
+              <div>
+                <h4 class="card-title">부산시청 온라인 교육영상</h4>
+                <p class="card-desc">
+                  기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작
+                </p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_premiere.png" alt="icon premiere pro" />
+                <img src="./images/icon_photoshop.png" alt="icon photoshop" />
+                <img src="./images/icon_illustrator.png" alt="icon illustrator" />
+                <img src="./images/icon_chatgpt.png" alt="icon chatgpt" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
+      </div>
+  </section>
+
+  <!-- 아트워크 -->
+  <section id="artwork">
+    <div class="inner">
+      <!-- title -->
+      <div class="title">
+        <h1>Card News</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper" data-aos="fade-right" data-aos-duration="3000">
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_01.png" alt="card news image">
+            </div>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>2026 용인시 미션투어</h3>
+                <p>용인시 소식 카드뉴스 제작</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_illustrator.png" alt="aftereffects" />
+                <img src="./images/icon_photoshop.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_02.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_03.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_04.png" alt="card news image">
+            </div>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>2024 모바일 건강보험증</h3>
+                <p>디지털배움터 모바일 건강보험증 카드뉴스 제작</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_illustrator.png" alt="aftereffects" />
+                <img src="./images/icon_photoshop.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_05.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_06.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_07.png" alt="card news image">
+            </div>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>AI 활용 노래 만들기</h3>
+                <p>디지털배움터 모바일 건강보험증 카드뉴스 제작</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_illustrator.png" alt="aftereffects" />
+                <img src="./images/icon_photoshop.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+           <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_07.png" alt="card news image">
+            </div>
+          </li>
+           <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_08.png" alt="card news image">
+            </div>
+          </li>
+           <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_09.png" alt="card news image">
+            </div>
+          </li>
+           <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_10.png" alt="card news image">
+            </div>
+          </li>
+           <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_11.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_12.png" alt="card news image">
+            </div>
+            <div class="card-info">
+              <div class="info-text">
+                <h3>딥페이크</h3>
+                <p>디지털배움터 딥페이크 카드뉴스 제작</p>
+              </div>
+              <div class="skill-icon">
+                <img src="./images/icon_illustrator.png" alt="aftereffects" />
+                <img src="./images/icon_photoshop.png" alt="aftereffects" />
+                <img src="./images/icon_chatgpt.png" alt="aftereffects" />
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_13.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_14.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_15.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_16.png" alt="card news image">
+            </div>
+          </li>
+          <li class="swiper-slide frame-portfolio">
+            <div class="portfolio-card news">
+              <img src="./images/card_news_17.png" alt="card news image">
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
-
   <!-- Contact Section -->
   <section id="contact">
     <div class="inner">
