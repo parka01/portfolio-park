@@ -505,7 +505,7 @@ main {
 
 .portfolio-card {
     width: 500px;
-    aspect-ratio: 1;
+    aspect-ratio: 1.7/1;
     border-radius: 24px;
     overflow: hidden;
     position: relative;
